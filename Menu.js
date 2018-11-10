@@ -15,7 +15,10 @@ handleClick: function(e){
   render() {
     return (
       //step 6: chooseVideo passing down as props on Menu component
-      <form onClick={this.props.chooseVideo}>
+      // <form onClick={this.props.chooseVideo}>
+      //step 9: changing wrapper to handleClick
+      <form onClick={this.handleClick} >
+      
         <input type="radio" name="src" value="fast" /> fast
         <input type="radio" name="src" value="slow" /> slow
         <input type="radio" name="src" value="cute" /> cute
