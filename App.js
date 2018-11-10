@@ -16,7 +16,7 @@ class App extends React.Component {
 
     this.state = { src: VIDEOS.fast };
   }
-
+//chooseVideo function as setState 
   chooseVideo: function (newVideo){
     this.setState({
       src: VIDEOS[newVideo]
