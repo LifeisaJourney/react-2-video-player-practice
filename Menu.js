@@ -1,6 +1,11 @@
 import React from 'react';
 
 export class Menu extends React.Component {
+constructor(props){
+  super(props);
+  this.handleClick=this.handleClick.bind(this);
+}
+//step 8: binding handleClick to this instance
 
 handleClick: function(e){
   const text=e.target.value;
