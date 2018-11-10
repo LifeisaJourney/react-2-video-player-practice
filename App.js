@@ -21,9 +21,10 @@ class App extends React.Component {
     return (
       <div>
         <h1>Video Player</h1>
-        <Menu/>
-        <Video />
+        <Menu />
+        <Video src={this.state.src}/>
       </div>
+      //passing src as state down to video component
     );
   }
 }
