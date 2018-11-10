@@ -7,7 +7,7 @@ constructor(props){
 }
 //step 8: binding handleClick to this instance
 
-handleClick: function(e){
+handleClick = (e)=>{
   const text=e.target.value;
   this.props.chooseVideo(text);
 }
