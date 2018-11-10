@@ -15,6 +15,8 @@ class App extends React.Component {
     super(props);
 
     this.state = { src: VIDEOS.fast };
+    this.chooseVideo=this.chooseVideo.bind(this);
+    //step 5: binding it to this App component with this instance
   }
 //step 3: chooseVideo function as setState 
   chooseVideo: function (newVideo){
