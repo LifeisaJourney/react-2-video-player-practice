@@ -16,7 +16,7 @@ class App extends React.Component {
 
     this.state = { src: VIDEOS.fast };
   }
-//chooseVideo function as setState 
+//step 3: chooseVideo function as setState 
   chooseVideo: function (newVideo){
     this.setState({
       src: VIDEOS[newVideo]
@@ -24,10 +24,11 @@ class App extends React.Component {
   }
 
   render() {
+    //step 4: passing chooseVideo into Menu component
     return (
       <div>
         <h1>Video Player</h1>
-        <Menu />
+        <Menu chooseVideo={this.chooseVideo}/>
         <Video src={this.state.src}/>
       </div>
       //step 1: passing src as state down to video component
